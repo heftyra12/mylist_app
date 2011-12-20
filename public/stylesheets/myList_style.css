@@ -33,8 +33,9 @@ a{
 	padding:0 10px 0 10px;
 }
 
-ul{
-	line-height: 10px;
+li{
+	line-height: 15px;
+	padding:0 20px 0 30px;
 }
 
 .hovered{

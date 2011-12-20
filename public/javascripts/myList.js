@@ -1,14 +1,19 @@
 $(document).ready(function(){
 	$('#addItem').click(function(event){
 		var input=document.getElementById('newItem');
-		$('#formId').before("<ul>"+input.value+"</ul>");
-		// alert("Input: " + input.value);
-		document.getElementById('newItem').value='';
+		if (input.value!=''){
+			$('li:last').after("<li>"+input.value+"</li>");
+			//alert("Input: " + input.value);
+			document.getElementById('newItem').value='';
+		}
 	});
 	
 	$('#listEdit').click(function(event){
-		//alert("Edit pressed");
-		// $('ul').html("<form>hi</form>");
+		$('li').each(function(n){
+			var nValue=document.getElementsByTagName('li');
+			$(this).after("<form><input value=" + nValue[n].innerHTML + "</form>");
+			alert("Item "+n+": " + "<form><input value=" + nValue[n].innerHTML + "</form>");
+		});
 	});
 	
 	$('#listEdit').hover(
