@@ -10,9 +10,9 @@ $(document).ready(function(){
 	
 	$('#listEdit').click(function(event){
 		$('li').each(function(n){
-			var nValue=document.getElementsByTagName('li');
-			$(this).after("<form><input value=" + nValue[n].innerHTML + "</form>");
-			alert("Item "+n+": "+nValue[n].innerHTML);
+			var nValue=document.getElementsByTagName('li').innerHTML;
+			$(this).after("<form><input value=" + nValue + "</form>");
+			// alert("Item "+n+": "+nValue);
 			$(this).remove();
 		});
 	});
