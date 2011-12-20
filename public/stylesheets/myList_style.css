@@ -29,8 +29,12 @@ a{
 }
 
 #addItem{
-	margin: 0 20px 0 0;
-	padding:0 20px 0 30px;
+	margin: 10px 10px 10px 30px;
+	padding:0 10px 0 10px;
+}
+
+ul{
+	line-height: 10px;
 }
 
 .hovered{

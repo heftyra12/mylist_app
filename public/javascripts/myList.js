@@ -8,6 +8,7 @@ $(document).ready(function(){
 	
 	$('#listEdit').click(function(event){
 		//alert("Edit pressed");
+		// $('ul').html("<form>hi</form>");
 	});
 	
 	$('#listEdit').hover(
