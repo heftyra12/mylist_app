@@ -12,7 +12,8 @@ $(document).ready(function(){
 		$('li').each(function(n){
 			var nValue=document.getElementsByTagName('li');
 			$(this).after("<form><input value=" + nValue[n].innerHTML + "</form>");
-			alert("Item "+n+": " + "<form><input value=" + nValue[n].innerHTML + "</form>");
+			alert("Item "+n+": "+nValue[n].innerHTML);
+			$(this).remove();
 		});
 	});
 	
